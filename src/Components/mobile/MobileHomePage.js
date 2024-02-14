@@ -6,6 +6,10 @@ import { faHeart, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const MobileHomePage = () => {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+    };
     const handleDownload = () => {
         // Path to the file in the public directory
         const filePath = process.env.PUBLIC_URL + '/Resume_Nikhil_Walia.pdf';
@@ -63,19 +67,18 @@ const MobileHomePage = () => {
             <div className=" flex flex-col mt-16 w-[90%] font-bold justify-between items-center">
                 <button
 
-                onClick={handleDownload}
+                    onClick={handleDownload}
 
                     className=" w-[100%] rounded h-14 bg-[#ff6835] flex justify-center items-center">
                     <FontAwesomeIcon className="mr-2 text-xl" icon={faDownload} /> Resume
                 </button>
-                
+
                 <button
-
-
+                    onClick={() => scrollToSection('mobileprojectpage')}
                     className=" w-[100%] mt-3 rounded h-14 bg-[#171236] flex justify-center items-center">
                     <FontAwesomeIcon className="mr-2 text-xl" icon={faGithub} /> My projects
                 </button>
-                 
+
             </div>
         </div>
     );
