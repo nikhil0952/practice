@@ -5,7 +5,7 @@ import { faHtml5, faCss3Alt, faJs, faReact, faJava, faEnvira, faNodeJs, faInstal
 
 const MobileSkillPage = () => {
     return (
-        <div id="mobileskillpage" className=" h-[140vh] flex flex-col justify-around items-center bg-black w-[100%]">
+        <div id="mobileskillpage" className=" h-[200vh] flex flex-col justify-around items-center bg-black w-[100%]">
             
             <div className=" text-2xl mt-10 lilita-one-regular">
                 <h1><span className=" text-[#ff6835] ">{"< "}</span>My TechStacks And Skills<span className=" text-[#ff6835] ">{" /> "}</span></h1>

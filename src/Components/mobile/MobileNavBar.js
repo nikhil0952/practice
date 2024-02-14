@@ -8,7 +8,7 @@ const MobileNavBar = () => {
         element.scrollIntoView({ behavior: 'smooth' });
     };
     return (
-        <div className=" h-[3.5rem] w-[95%] left-[2.5%] flex justify-center  rounded-xl bg-[#1e1d1d] fixed bottom-2">
+        <div className=" h-[3.5rem] w-[95%] left-[2.5%] flex justify-center  rounded-xl bg-[#1e1d1d] fixed bottom-1">
             <div className="w-[90%] h-[100%] text-2xl flex justify-around items-center text-[#f8f5f5]">
                 <div >
                     <FontAwesomeIcon  onClick={() => scrollToSection('mobilehomepage')} icon={faHouse} />
